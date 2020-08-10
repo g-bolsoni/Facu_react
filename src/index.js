@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Game from './components/Game'
 import Stadion from './components/Stadion'
 import {GoodMorning,GoodAfternoon} from './components/Greetings'
+import Product from './class/ Product'
 
 
 
@@ -20,5 +21,6 @@ import {GoodMorning,GoodAfternoon} from './components/Greetings'
         <Stadion nome="Pedrocão"/>
         <GoodMorning timeA="Sesi"/>
         <GoodAfternoon timeB="Flamengo"/>
+        <Product/>
     </React.Fragment>,
     document.getElementById("root"))
