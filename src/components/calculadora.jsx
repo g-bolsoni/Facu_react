@@ -41,7 +41,8 @@ export default class Calculadora extends Component{
             else{
                 this.setState({resultado:'impossivel divisão por 0'})
             }
-            default:break
+                break
+        default:break
         }
     }
 
@@ -51,9 +52,22 @@ export default class Calculadora extends Component{
                 <h1>projeto de Calculadora</h1>
                 <h2>Operando 1:<input type="number" value= {this.setOper1} onChange={e=>this.setOper1(e)} /></h2>
                 <h2>Operando 2:<input type="number" value= {this.setOper2} onChange={e=>this.setOper1(e)} /></h2>
-                <h2>Operador:<input type="string" value= {this.operador} onChange={e=>this.setOper1(e)} /></h2>
+                <h2>Operador:
+                    <select  onChange={e=>this.setOper1(e)} >
+                    <option value= "+"> + </option>
+                    <option value= "-"> - </option>
+                    <option value= "*"> * </option>
+                    <option value= "/"> / </option>
+                    </select>
+                </h2>
                 <h2><button type="button" onClick={ e=>this.opera()}>Calcular </button></h2>
                 <h2>Resultado : {this.state.resultado}</h2>
+
+                <h2>
+                   Masculino <input type="radio" name="sexo" onClick={ e=> this.setSexo('m')}/>
+                   Feminino <input type="radio" name="sexo" onClick={ e=> this.setSexo('f')}/>
+                
+                </h2>
             </div>
         )
     }
