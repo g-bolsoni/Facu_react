@@ -4,6 +4,7 @@ import Game from './components/Game'
 import Stadion from './components/Stadion'
 import {GoodMorning,GoodAfternoon} from './components/Greetings'
 import Product from './class/ Product'
+import Calculadora from'./components/calculadora'
 
 
 
@@ -22,5 +23,7 @@ import Product from './class/ Product'
         <GoodMorning timeA="Sesi"/>
         <GoodAfternoon timeB="Flamengo"/>
         <Product/>
+        <Calculadora />
+        
     </React.Fragment>,
     document.getElementById("root"))
